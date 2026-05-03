@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d0nk4vuu48k3"]
+
+[ext_resource type="Script" uid="uid://crr60jpduoeeu" path="res://scripts/managers/game_managers.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://b8wujo8yiyd4t" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="Resource" uid="uid://dcckexgblr3de" path="res://data/game_data.tres" id="2_0wfyh"]
+
+[node name="Main" type="Node" unique_id=727947993 node_paths=PackedStringArray("game_manager")]
+script = ExtResource("1_sugp2")
+game_manager = NodePath("Global/GameManager")
+
+[node name="Global" type="Node" parent="." unique_id=681545103]
+
+[node name="GameManager" type="Node" parent="Global" unique_id=1073659002]
+script = ExtResource("1_o5qli")
+game_data = ExtResource("2_0wfyh")
+
+[node name="Level" type="Node" parent="." unique_id=1565323220]
+
+[node name="Environment" type="Node" parent="." unique_id=2009965417]
+
+[node name="Lighting" type="Node" parent="." unique_id=1876955787]
